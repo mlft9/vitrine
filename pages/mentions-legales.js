@@ -26,9 +26,9 @@ export default function MentionsLegales() {
 
         <h2 className="text-2xl font-bold text-white mb-4">Hébergement</h2>
         <p className="text-gray-400 mb-4">
-          Hébergeur: Azure Cloud<br/>
-          Adresse: 1 Microsoft Way, Redmond, WA 98052, USA<br/>
-          Téléphone: +1 (425) 882-8080
+          Hébergeur: Hebergetamere<br/>
+          Adresse: 10 Place gustave de l'aune, 93270 Sevran<br/>
+          Téléphone: +7 mes couilles sur ton front
         </p>
 
         <h2 className="text-2xl font-bold text-white mb-4">Droits de Propriété Intellectuelle</h2>
