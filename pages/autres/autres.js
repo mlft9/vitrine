@@ -26,7 +26,7 @@ export default function ComingSoon() {
         
         {/* Return to Menu Button */}
         <Link href="/" className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-700 transition transform hover:scale-105">
-          Retour au Menu
+          Revenir à l'accueil
         </Link>
       </motion.div>
 

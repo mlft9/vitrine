@@ -135,7 +135,7 @@ export default function VPSCloud() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <motion.img
-              src="/images/vps-product.png"
+              src="/vpsw-product.png"
               alt="VPS Cloud Product"
               className="w-full h-auto rounded-lg shadow-lg max-w-md"
               initial={{ opacity: 0, scale: 0.9 }}

@@ -47,7 +47,7 @@ export default function Home() {
       <Head>
         <title>FrozenHost - Hébergement</title>
         <meta name="description" content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées." />
-        <meta name="keywords" content="cloud, hébergement, infrastructure, innovation, sécurité, performance" />
+        <meta name="keywords" content="cloud, hébergement, infrastructure, innovation, sécurité, performance, xateox, unishadow, exoevel, aCollective, hébergeur français, hébergeur game, hébergeur Minecraft, hébergeur FiveM, hébergeur VPS" />
         <meta name="author" content="FrozenHost" />
       </Head>
 

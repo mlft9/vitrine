@@ -278,7 +278,7 @@ export default function FiveM() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <motion.img
-              src="/images/fivem-product.png"
+              src="/logo-fivem.png"
               alt="FiveM Product"
               className="w-full h-auto rounded-lg shadow-lg max-w-md"
               initial={{ opacity: 0, scale: 0.9 }}
