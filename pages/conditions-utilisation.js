@@ -23,7 +23,7 @@ export default function ConditionsUtilisation() {
 
         <h2 className="text-2xl font-bold text-white mb-4">Droits et Responsabilités</h2>
         <p className="text-gray-400 mb-4">
-          Unixo ne peut être tenu responsable des erreurs ou omissions des informations présentes sur le site. L'utilisateur utilise le site à ses propres risques et FrozenHost ne pourra être tenu responsable de tout dommage direct ou indirect résultant de l'utilisation du site.
+        FrozenHost ne peut être tenu responsable des erreurs ou omissions des informations présentes sur le site. L'utilisateur utilise le site à ses propres risques et FrozenHost ne pourra être tenu responsable de tout dommage direct ou indirect résultant de l'utilisation du site.
         </p>
       </div>
 
