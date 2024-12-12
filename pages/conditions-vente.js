@@ -6,14 +6,14 @@ export default function ConditionsVente() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col">
       <Head>
-        <title>Conditions de Vente - Unixo</title>
+        <title>Conditions de Vente - FrozenHost</title>
       </Head>
       <Navbar />
 
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-indigo-500 mb-6">Conditions de Vente</h1>
         <p className="text-gray-400 mb-4">
-          Les présentes conditions de vente s'appliquent à toutes les transactions effectuées sur le site <strong>Unixo</strong>.
+          Les présentes conditions de vente s'appliquent à toutes les transactions effectuées sur le site <strong>FrozenHost</strong>.
         </p>
 
         <h2 className="text-2xl font-bold text-white mb-4">Commandes et Paiements</h2>
