@@ -9,6 +9,7 @@ export default function ComingSoon() {
     <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col justify-between">
       <Head>
         <title>Bientôt Disponible - FrozenHost</title>
+        <link rel="icon" type="image/png" href="/logo.png" />
       </Head>
       <Navbar />
 

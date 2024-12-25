@@ -8,6 +8,7 @@ export default function Custom404() {
     <div className="bg-gradient-to-r from-gray-900 via-black to-gray-800 min-h-screen text-white flex flex-col items-center justify-center">
       <Head>
         <title>Oups - FrozenHost</title>
+        <link rel="icon" type="image/png" href="/logo.png" />
       </Head>
       <motion.h1
         className="text-5xl font-bold mb-4"

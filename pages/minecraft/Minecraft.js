@@ -1,95 +1,84 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Switch from 'react-switch';
-import { FaShieldAlt, FaMicrochip, FaDesktop, FaFolder, FaHeadset, FaUsers, FaMemory, FaHdd, FaCloud, FaCube, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaShieldAlt, FaMicrochip, FaDesktop, FaFolder, FaHeadset, FaMemory, FaHdd, FaCloud, FaCube } from 'react-icons/fa';
 
-const productOptions = {
-  ryzen: [
-    {
-      id: 1, 
-      name: 'Minecraft - Essai 48h (Intel)',
-      price: 'Gratuit',
-      description: 'Idéal pour découvrir nos services et tester votre serveur Minecraft.',
-      link: 'https://client.frozenhost.fr/store/basket/config/35',
-      features: [
-        { icon: <FaMicrochip />, text: '2 cœurs Intel Xeon E5 1650V4' },
-        { icon: <FaMemory />, text: '4 Go RAM DDR4' },
-        { icon: <FaCloud />, text: '1 Gb/s' },
-        { icon: <FaHdd />, text: '20 Go SSD' },
-        { icon: <FaCube />, text: 'Compatible Spigot/Paper/Forge' },
-      ],
-    },
-    {
-      id: 2,
-      name: 'Minecraft - Développement (Intel)',
-      price: '4.99€',
-      description: 'Une offre idéale pour un petit serveur ou pour développer vos plugins.',
-      link: 'https://client.frozenhost.fr/store/basket/config/13',
-      features: [
-        { icon: <FaMicrochip />, text: '2 cœurs Intel Xeon E5 1650V4' },
-        { icon: <FaMemory />, text: '6 Go RAM DDR4' },
-        { icon: <FaCloud />, text: '1 Gb/s' },
-        { icon: <FaHdd />, text: '40 Go SSD' },
-        { icon: <FaCube />, text: 'Compatible Vanilla et Modpacks' },
-      ],
-    },
-    {
-      id: 3,
-      name: 'Minecraft - Power (Intel)',
-      price: '9.99€',
-      description: 'Un serveur performant pour des parties fluides, même avec plusieurs joueurs.',
-      link: 'https://client.frozenhost.fr/store/basket/config/14',
-      features: [
-        { icon: <FaMicrochip />, text: '4 cœurs Intel Xeon E5 1650V4' },
-        { icon: <FaMemory />, text: '8 Go RAM DDR4' },
-        { icon: <FaCloud />, text: '1 Gb/s' },
-        { icon: <FaHdd />, text: '60 Go SSD' },
-        { icon: <FaCube />, text: 'Prise en charge des shaders et packs HD' },
-      ],
-    },
-    {
-      id: 4,
-      name: 'Minecraft - Élite (Intel)',
-      price: '19.99€',
-      description: 'Une solution haut de gamme pour des serveurs très actifs et bien optimisés.',
-      link: 'https://client.frozenhost.fr/store/basket/config/15',
-      features: [
-        { icon: <FaMicrochip />, text: '6 cœurs Intel Xeon E5 1650V4' },
-        { icon: <FaMemory />, text: '12 Go RAM DDR4' },
-        { icon: <FaCloud />, text: '1 Gb/s' },
-        { icon: <FaHdd />, text: '100 Go SSD' },
-        { icon: <FaCube />, text: 'Support des grandes cartes et plugins complexes' },
-      ],
-    },
-  ],
-};
+const productOptions = [
+  {
+    id: 1,
+    name: 'Minecraft - Essai 48h',
+    price: 'Gratuit',
+    description: 'Profitez d’un accès gratuit pendant 48 heures pour découvrir la qualité de nos services et tester votre serveur Minecraft.',
+    link: 'https://client.frozenhost.fr/store/basket/config/35',
+    features: [
+      { icon: <FaMicrochip />, text: '2 cœurs' },
+      { icon: <FaMemory />, text: '4 Go RAM DDR4' },
+      { icon: <FaCloud />, text: '1 Gb/s' },
+      { icon: <FaHdd />, text: '20 Go SSD' },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Minecraft - Développement',
+    price: '4.99€',
+    description: 'Parfait pour développer des serveurs Minecraft personnalisés avec les ressources nécessaires pour débuter.',
+    link: 'https://client.frozenhost.fr/store/basket/config/13',
+    features: [
+      { icon: <FaMicrochip />, text: '2 cœurs' },
+      { icon: <FaMemory />, text: '6 Go RAM DDR4' },
+      { icon: <FaCloud />, text: '1 Gb/s' },
+      { icon: <FaHdd />, text: '40 Go SSD' },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Minecraft - Power',
+    price: '9.99€',
+    description: 'Une offre idéale pour héberger des serveurs Minecraft performants et accueillir plusieurs joueurs sans compromis sur la fluidité.',
+    link: 'https://client.frozenhost.fr/store/basket/config/14',
+    features: [
+      { icon: <FaMicrochip />, text: '4 cœurs' },
+      { icon: <FaMemory />, text: '8 Go RAM DDR4' },
+      { icon: <FaCloud />, text: '1 Gb/s' },
+      { icon: <FaHdd />, text: '60 Go SSD' },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Minecraft - Élite',
+    price: '19.99€',
+    description: 'Conçu pour des serveurs très actifs, cette offre assure une stabilité optimale et des performances premium.',
+    link: 'https://client.frozenhost.fr/store/basket/config/15',
+    features: [
+      { icon: <FaMicrochip />, text: '6 cœurs' },
+      { icon: <FaMemory />, text: '12 Go RAM DDR4' },
+      { icon: <FaCloud />, text: '1 Gb/s' },
+      { icon: <FaHdd />, text: '100 Go SSD' },
+    ],
+  },
+];
 
 const includedFeatures = [
-  { icon: <FaShieldAlt />, title: 'ANTI-DDOS', description: 'Protégez votre serveur contre les attaques.' },
-  { icon: <FaMicrochip />, title: 'Processeurs Intel Xeon', description: 'Haute performance jusqu\'à 3.8 GHz.' },
-  { icon: <FaFolder />, title: 'FTP & Panel Web', description: 'Gérez vos fichiers et configurations facilement.' },
-  { icon: <FaHeadset />, title: 'Support 24/7', description: 'Une assistance toujours disponible.' },
-  { icon: <FaCloud />, title: 'Sauvegarde Automatique', description: 'Sécurisez vos données.' },
+  { icon: <FaShieldAlt />, title: 'ANTI-DDOS', description: 'Mitigation automatique' },
+  { icon: <FaMicrochip />, title: 'INTEL XEON', description: 'Intel(R) Xeon(R) CPU E5-1650 v4 - E5-2680 v2' },
+  { icon: <FaDesktop />, title: 'PANEL', description: 'Comme si vous étiez sur votre machine' },
+  { icon: <FaFolder />, title: 'WEB-FTP', description: 'Explorez et éditez sans logiciel' },
+  { icon: <FaHeadset />, title: 'SUPPORT 24/7', description: 'Un support à votre écoute' },
 ];
 
 export default function Minecraft() {
-  const [selectedProduct, setSelectedProduct] = useState(productOptions.ryzen[0]);
-
-  useEffect(() => {
-    setSelectedProduct(productOptions.ryzen[0]);
-  }, []);
+  const [selectedProduct, setSelectedProduct] = useState(productOptions[0]);
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200">
       <Head>
         <title>Offres Minecraft - FrozenHost</title>
+        <link rel="icon" type="image/png" href="/logo.png" />
       </Head>
       <Navbar />
 
-      {/* Bannière */}
       <motion.div
         className="relative bg-cover bg-center text-black py-32"
         style={{ backgroundImage: `url('/bannerminecraft.png')` }}
@@ -97,6 +86,9 @@ export default function Minecraft() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
+        <div className="absolute inset-0">
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl font-bold mb-2">Serveurs Minecraft</h1>
           <p className="text-lg">Créez votre univers Minecraft grâce à nos serveurs performants.</p>
@@ -107,7 +99,7 @@ export default function Minecraft() {
         <h1 className="text-3xl font-bold mb-8 text-center">Nos Offres Minecraft</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          {productOptions.ryzen.map((product) => (
+          {productOptions.map((product) => (
             <div
               key={product.id}
               onClick={() => setSelectedProduct(product)}
@@ -153,7 +145,6 @@ export default function Minecraft() {
           </div>
         </div>
 
-        {/* Fonctionnalités incluses */}
         <div className="bg-indigo-700 text-white py-12 mt-16">
           <h2 className="text-center text-3xl font-bold mb-6">Inclus avec votre serveur Minecraft</h2>
           <p className="text-indigo-300 text-center mb-8">
