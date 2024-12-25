@@ -78,7 +78,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, xateox, unishadow, exoevel, aCollective, hébergeur français, hébergeur game, hébergeur Minecraft, hébergeur FiveM, hébergeur VPS"
+          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, xateox, unishadow, exoevel, aCollective, hébergeur français, hébergeur game, hébergeur Minecraft, hébergeur FiveM, hébergeur VPS, frozenhost, FrozenHost, frozenhost.fr, frozen host"
         />
         <meta name="author" content="FrozenHost" />
       </Head>
