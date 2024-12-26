@@ -59,13 +59,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gray-900 text-gray-200 overflow-hidden">
-      {/* Effet d'animation en arrière-plan couvrant toute la page */}
+    <div className="relative min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-200 overflow-hidden">
+      {/* Effet d'animation en arrière-plan */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-40 left-10 w-80 h-80 bg-indigo-400 opacity-30 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-400 opacity-30 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-indigo-600 opacity-20 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-pink-400 opacity-25 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute top-10 left-10 w-96 h-96 bg-blue-400 opacity-10 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-600 opacity-20 rounded-full filter blur-2xl animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-cyan-500 opacity-15 rounded-full filter blur-2xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-blue-300 opacity-20 rounded-full filter blur-3xl animate-pulse"></div>
       </div>
 
       <Head>
@@ -78,7 +78,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, xateox, unishadow, exoevel, aCollective, hébergeur français, hébergeur game, hébergeur Minecraft, hébergeur FiveM, hébergeur VPS, frozenhost, FrozenHost, frozenhost.fr, frozen host"
+          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost"
         />
         <meta name="author" content="FrozenHost" />
       </Head>
@@ -89,24 +89,24 @@ export default function Home() {
       </div>
 
       {/* Section de bannière */}
-      <div className="bg-transparent flex flex-col items-center justify-center h-screen text-center px-4 relative z-10">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <div className="flex flex-col items-center justify-center h-screen text-center px-4 relative z-10">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-cyan-300">
           Bienvenue sur <span className="text-white">FrozenHost</span>
         </h1>
 
-        <div className="text-lg md:text-xl mb-8 max-w-lg text-gray-200 min-h-[60px] flex items-center justify-center">
+        <div className="text-lg md:text-xl mb-8 max-w-lg text-white-100 min-h-[60px] flex items-center justify-center">
           <Typewriter
             words={texts}
-            loop={true} // ou false si tu veux qu'il s'arrête après une boucle
-            typeSpeed={70} // vitesse de frappe
-            deleteSpeed={50} // vitesse d'effacement
-            delaySpeed={1000} // délai avant de recommencer
+            loop={true}
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
           />
         </div>
 
         <Link to="offersSection" smooth={true} duration={800}>
           <button
-            className="px-8 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-300"
+            className="px-8 py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
             aria-label="Découvrir nos services"
           >
             Découvrir nos services
@@ -117,23 +117,21 @@ export default function Home() {
       {/* Section à propos */}
       <div
         id="aboutUs"
-        className="py-20 px-4 bg-transparent text-gray-200 relative z-10"
+        className="py-20 px-4 bg-transparent text-white-200 relative z-10"
       >
         <h2 className="text-4xl font-bold text-center mb-8">
           À propos de nous
         </h2>
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg md:text-xl text-gray-400 mb-6">
+          <p className="text-lg md:text-xl text-white-300 mb-6">
             Chez FrozenHost, nous nous engageons à offrir une infrastructure
             cloud fiable et innovante qui soutient les créateurs et les
-            entreprises de toutes tailles. Notre mission est de rendre le cloud
-            plus accessible, sécurisé et performant, tout en mettant l'accent
-            sur l'expérience utilisateur.
+            entreprises de toutes tailles.
           </p>
-          <p className="text-lg md:text-xl text-gray-400">
-            Grâce à notre expertise et à notre passion pour la technologie, nous
-            développons des solutions adaptées aux besoins modernes, propulsant
-            vos projets vers de nouveaux sommets.
+          <p className="text-lg md:text-xl text-white-300">
+            Grâce à notre expertise, nous développons des solutions adaptées
+            aux besoins modernes, propulsant vos projets vers de nouveaux
+            sommets.
           </p>
         </div>
       </div>
@@ -141,7 +139,7 @@ export default function Home() {
       {/* Section des offres */}
       <div
         id="offersSection"
-        className="py-20 px-4 bg-transparent text-gray-200 relative z-10"
+        className="py-20 px-4 bg-transparent text-white-200 relative z-10"
       >
         <h2 className="text-4xl font-bold text-center mb-8">Nos Offres</h2>
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
@@ -158,11 +156,11 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-300">
+                <h3 className="text-2xl font-semibold mb-4 text-white-300">
                   {offer.title}
                 </h3>
-                <p className="text-gray-400 mb-4">{offer.description}</p>
-                <button className="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors">
+                <p className="text-white-200 mb-4">{offer.description}</p>
+                <button className="px-4 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700 transition-colors">
                   <a
                     href={offer.link}
                     aria-label={`En savoir plus sur ${offer.title}`}
