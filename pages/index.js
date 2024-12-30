@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import Head from "next/head";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -69,32 +69,46 @@ export default function Home() {
       </div>
 
       <Head>
-        <title>FrozenHost - Hébergement</title>
+        <title>FrozenHost - Hébergement Cloud Performant</title>
         <link rel="icon" type="image/png" href="/logo.png" />
+        <link rel="preload" href="/logo.png" as="image" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées. Optez pour un hébergement performant et sécurisé à vos besoins. "
+          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées. Optez pour un hébergement performant et sécurisé à vos besoins."
         />
         <meta
           name="keywords"
           content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost, unishadow, xateox, matheo, exoevel"
         />
         <meta name="author" content="FrozenHost" />
-        <meta
-          property="og:title"
-          content="FrozenHost - Hébergement cloud fiable et innovant"
-        />
+        <meta property="og:title" content="FrozenHost - Hébergement cloud fiable et innovant" />
         <meta
           property="og:description"
           content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées."
         />
-        <meta
-          property="og:image"
-          content="https://frozenhost.fr/logo.png"
-        />
+        <meta property="og:image" content="https://frozenhost.fr/logo.png" />
         <meta property="og:url" content="https://frozenhost.fr/" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "FrozenHost - Hébergement Cloud Performant",
+            "description": "Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante.",
+            "url": "https://frozenhost.fr/",
+            "publisher": {
+              "@type": "Organization",
+              "name": "FrozenHost",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://frozenhost.fr/logo.png"
+              }
+            }
+          }
+        `}
+        </script>
       </Head>
 
       {/* Navbar */}
@@ -108,7 +122,10 @@ export default function Home() {
           Bienvenue sur <span className="text-white">FrozenHost</span>
         </h1>
 
-        <div className="text-lg md:text-xl mb-8 max-w-lg text-white-100 min-h-[60px] flex items-center justify-center">
+        <div
+          className="text-lg md:text-xl mb-8 max-w-lg text-white-100 min-h-[60px] flex items-center justify-center"
+          aria-live="polite"
+        >
           <Typewriter
             words={texts}
             loop={true}
@@ -118,13 +135,12 @@ export default function Home() {
           />
         </div>
 
-        <Link to="offersSection" smooth={true} duration={800}>
-          <button
+        <Link href="#offersSection" aria-label="Découvrir nos services">
+          <div
             className="px-8 py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
-            aria-label="Découvrir nos services"
           >
             Découvrir nos services
-          </button>
+          </div>
         </Link>
       </div>
 
@@ -133,9 +149,7 @@ export default function Home() {
         id="aboutUs"
         className="py-20 px-4 bg-transparent text-white-200 relative z-10"
       >
-        <h2 className="text-4xl font-bold text-center mb-8">
-          À propos de nous
-        </h2>
+        <h2 className="text-4xl font-bold text-center mb-8">À propos de nous</h2>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl text-white-300 mb-6">
             Chez FrozenHost, nous nous engageons à offrir une infrastructure
@@ -173,14 +187,13 @@ export default function Home() {
                   {offer.title}
                 </h3>
                 <p className="text-white-200 mb-4">{offer.description}</p>
-                <button className="px-4 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700 transition-colors">
-                  <a
-                    href={offer.link}
-                    aria-label={`En savoir plus sur ${offer.title}`}
+                <Link href={offer.link} aria-label={`En savoir plus sur ${offer.title}`}>
+                  <div
+                    className="px-4 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700 transition-colors"
                   >
                     En savoir plus
-                  </a>
-                </button>
+                  </div>
+                </Link>
               </div>
             </div>
           ))}
