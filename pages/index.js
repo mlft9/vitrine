@@ -74,7 +74,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées. Optez pour un hébergement performant et sécurisé, adapté à vos besoins. Profitez de nos offres d'hébergement FiveM, Minecraft, VPS Cloud et bien plus encore !"
+          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées. Optez pour un hébergement performant et sécurisé à vos besoins. "
         />
         <meta
           name="keywords"
