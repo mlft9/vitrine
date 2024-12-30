@@ -78,7 +78,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost"
+          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost, unishadow, xateox, matheo, exoevel"
         />
         <meta name="author" content="FrozenHost" />
         <meta
