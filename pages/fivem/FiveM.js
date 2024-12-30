@@ -104,7 +104,7 @@ export default function FiveM() {
   const [selectedProduct, setSelectedProduct] = useState(productOptions[0]);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-200">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-200">
       <Head>
         <title>Offres FiveM - FrozenHost</title>
         <link rel="icon" type="image/png" href="/logo.png" />
@@ -122,21 +122,24 @@ export default function FiveM() {
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-900 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl font-bold mb-2">Serveurs FiveM</h1>
-          <p className="text-lg">Profitez de performances optimales pour vos serveurs GTA V Roleplay avec nos offres adaptées à vos besoins.</p>
+          <h1 className="text-4xl font-bold mb-2 text-white-300">Serveurs FiveM</h1>
+          <p className="text-lg text-white-400">Profitez de performances optimales pour vos serveurs GTA V Roleplay avec nos offres adaptées à vos besoins.</p>
         </div>
       </motion.div>
 
-      <div className="container mx-auto px-4 py-16 bg-gray-900">
-        <h1 className="text-3xl font-bold mb-8 text-center">Nos Offres FiveM</h1>
+      <div className="container mx-auto px-4 py-16">
+        <h1 className="text-3xl font-bold mb-8 text-center text-cyan-300">Nos Offres <span className='text-white'>FiveM</span></h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {productOptions.map((product) => (
             <div
               key={product.id}
               onClick={() => setSelectedProduct(product)}
-              className={`p-6 rounded-lg shadow-lg cursor-pointer ${selectedProduct.id === product.id ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-white'
-                } hover:bg-indigo-500 transition`}
+              className={`p-6 rounded-lg shadow-lg cursor-pointer transition ${
+                selectedProduct.id === product.id
+                  ? 'bg-cyan-600 text-white'
+                  : 'bg-gray-800 text-cyan-300 hover:bg-cyan-500'
+              }`}
             >
               <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
               <p className="text-lg font-bold">{product.price}</p>
@@ -156,23 +159,24 @@ export default function FiveM() {
             />
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-4">{selectedProduct.name}</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white-300">{selectedProduct.name}</h2>
             <p className="text-gray-400 mb-6">{selectedProduct.description}</p>
-            <p className="text-2xl font-semibold text-indigo-400 mb-4">{selectedProduct.price}</p>
+            <p className="text-2xl font-semibold text-cyan-400 mb-4">{selectedProduct.price}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {selectedProduct.features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-2">
-                  <span className="text-indigo-400 text-lg">{feature.icon}</span>
+                  <span className="text-cyan-400 text-lg">{feature.icon}</span>
                   <span className="text-gray-300">{feature.text}</span>
                 </div>
               ))}
             </div>
             <a href={selectedProduct.link} target="_blank" rel="noopener noreferrer">
               <button
-                className={`px-6 py-3 rounded-full shadow-lg transition transform mt-6 ${selectedProduct.name.includes('Infinity')
-                  ? 'bg-green-600 hover:bg-green-700 text-white'
-                  : 'bg-indigo-600 hover:bg-indigo-700 text-white'
-                  }`}
+                className={`px-6 py-3 rounded-full shadow-lg transition transform mt-6 ${
+                  selectedProduct.name.includes('Infinity')
+                    ? 'bg-green-600 hover:bg-green-700 text-white'
+                    : 'bg-cyan-600 hover:bg-cyan-700 text-white'
+                }`}
               >
                 {selectedProduct.name.includes('Infinity') ? 'Nous Contacter' : 'Acheter Maintenant'}
               </button>
@@ -180,18 +184,18 @@ export default function FiveM() {
           </div>
         </div>
 
-        <div className="bg-indigo-700 text-white py-12 mt-16">
-          <h2 className="text-center text-3xl font-bold mb-6">Inclus avec votre serveur GTA V RP</h2>
-          <p className="text-indigo-300 text-center mb-8">
+        <div className="bg-cyan-700 text-white py-12 mt-16">
+          <h2 className="text-center text-3xl font-bold mb-6 text-white">Inclus avec votre serveur GTA V RP</h2>
+          <p className="text-cyan-300 text-center mb-8">
             Hébergé sur des serveurs de dernière génération pour une expérience optimale. Nous utilisons des processeurs Intel Xeon, ainsi que des disques SSD ou NVMe à haute performance.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 md:px-16">
             {includedFeatures.map((feature, index) => (
-              <div key={index} className="bg-indigo-800 flex items-center p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-200">
+              <div key={index} className="bg-cyan-800 flex items-center p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-200">
                 <span className="text-white text-3xl mr-4">{feature.icon}</span>
                 <div>
                   <h3 className="font-bold text-lg">{feature.title}</h3>
-                  <p className="text-indigo-300 text-sm">{feature.description}</p>
+                  <p className="text-cyan-300 text-sm">{feature.description}</p>
                 </div>
               </div>
             ))}
