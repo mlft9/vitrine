@@ -1,10 +1,9 @@
-// components/Footer.js
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white-300 p-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Logo et description */}
         <div>
           <div className="flex items-center space-x-2">
@@ -82,6 +81,27 @@ export default function Footer() {
             <img src="/visa.png" alt="Visa" className="w-12 h-8" />
             <img src="/mastercard.png" alt="Mastercard" className="w-12 h-8" />
             <img src="/paypal.png" alt="PayPal" className="w-12 h-8" />
+          </div>
+        </div>
+
+        {/* Avis */}
+        <div>
+          <h3 className="font-semibold text-lg mb-2 border-b-2 border-cyan-600 inline-block">
+            Avis
+          </h3>
+          <div className="mt-4">
+            <a
+              href="https://www.top-heberg.com/hebergeur/frozenhost-1070"
+              target="_blank"
+              title="FrozenHost sur Top-heberg.com"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.top-heberg.com/badge/frozenhost-1070?s=refer"
+                width="250"
+                alt="Top-heberg.com"
+              />
+            </a>
           </div>
         </div>
       </div>
