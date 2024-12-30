@@ -74,13 +74,27 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées."
+          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées. Optez pour un hébergement performant et sécurisé, adapté à vos besoins. Profitez de nos offres d'hébergement FiveM, Minecraft, VPS Cloud et bien plus encore !"
         />
         <meta
           name="keywords"
           content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost"
         />
         <meta name="author" content="FrozenHost" />
+        <meta
+          property="og:title"
+          content="FrozenHost - Hébergement cloud fiable et innovant"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées."
+        />
+        <meta
+          property="og:image"
+          content="https://frozenhost.fr/logo.png"
+        />
+        <meta property="og:url" content="https://frozenhost.fr/" />
+        <meta property="og:type" content="website" />
       </Head>
 
       {/* Navbar */}
@@ -129,9 +143,8 @@ export default function Home() {
             entreprises de toutes tailles.
           </p>
           <p className="text-lg md:text-xl text-white-300">
-            Grâce à notre expertise, nous développons des solutions adaptées
-            aux besoins modernes, propulsant vos projets vers de nouveaux
-            sommets.
+            Grâce à notre expertise, nous développons des solutions adaptées aux
+            besoins modernes, propulsant vos projets vers de nouveaux sommets.
           </p>
         </div>
       </div>
