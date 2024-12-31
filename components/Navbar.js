@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Script from "next/script";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -216,6 +217,11 @@ export default function Navbar() {
           </button>
         </Link>
       </motion.div>
+      {/* Charger Material Icons */}
+      <Script
+        src="https://fonts.googleapis.com/icon?family=Material+Icons"
+        strategy="lazyOnload"
+      />
     </nav>
   );
 }
