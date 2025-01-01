@@ -80,8 +80,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost, unishadow, xateox, matheo, exoevel"
-        />
+          content="cloud, hébergement, infrastructure, innovation, sécurité, performance, frozenhost, unishadow, xateox, matheo, exoevel, vps, pas cher, fiable, jeux, serveur pas cher, location de serveurs, hébergement économique, serveur de jeux à petit prix, VPS haute performance, VPS pas cher, serveur dédié abordable, serveurs SSD pas cher, hébergement gaming pas cher, serveur Minecraft pas cher, serveur Rust pas cher, serveur ARK pas cher, serveur GTA RP, hébergement VPS France, meilleurs prix VPS, VPS low cost, serveur gaming pas cher, infrastructure économique, solutions VPS discount, offres hébergement abordables, VPS rapide et fiable, prix imbattables, serveur pas cher pour jeux, offres spéciales VPS, réduction VPS, hébergement en ligne pas cher, VPS rapide à petit prix, hébergement sécurisé et pas cher, qualité et prix compétitifs, VPS premium à prix réduit, support client inclus, VPS pas cher pour débutants, hébergement VPS 1€/mois, serveur dédié à petit budget, meilleur rapport qualité/prix VPS, serveur privé abordable, serveur performant et économique, service fiable et pas cher, location de serveur gaming low cost, hébergement pour jeux en ligne pas cher"        />
         <meta name="author" content="FrozenHost" />
         <meta property="og:title" content="FrozenHost - Hébergement cloud fiable et innovant" />
         <meta
