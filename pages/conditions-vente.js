@@ -6,30 +6,55 @@ export default function ConditionsVente() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col">
       <Head>
-        <title>Conditions de Vente - FrozenHost</title>
+        <title>Termes et Conditions de Facturation - FrozenHost</title>
         <link rel="icon" type="image/png" href="/logo.png" />
       </Head>
       <Navbar />
 
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-indigo-500 mb-6">Conditions de Vente</h1>
+        <h1 className="text-4xl font-bold text-indigo-500 mb-6">Termes et Conditions de Facturation</h1>
         <p className="text-gray-400 mb-4">
-          Les présentes conditions de vente s'appliquent à toutes les transactions effectuées sur le site <strong>FrozenHost</strong>.
+          Les présents termes et conditions de facturation s'appliquent à tous les clients de <strong>FrozenHost</strong>.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Commandes et Paiements</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">Émission des Factures</h2>
         <p className="text-gray-400 mb-4">
-          Toutes les commandes sont effectuées en ligne via notre plateforme. Les paiements sont sécurisés et peuvent être effectués par carte bancaire, PayPal, ou tout autre moyen de paiement indiqué sur notre site.
+          Les factures sont émises automatiquement à la fin de chaque période de facturation et envoyées à l'adresse e-mail fournie lors de l'inscription.
+        </p>
+
+        <h2 className="text-2xl font-bold text-white mb-4">Modes de Paiement</h2>
+        <p className="text-gray-400 mb-4">
+          Les paiements peuvent être effectués via carte bancaire, PayPal ou virement bancaire. Tous les paiements doivent être effectués en euros (€).
+        </p>
+
+        <h2 className="text-2xl font-bold text-white mb-4">Délais de Paiement</h2>
+        <p className="text-gray-400 mb-4">
+          Le paiement doit être effectué dans un délai de 14 jours suivant l'émission de la facture. En cas de retard, des frais de retard peuvent être appliqués.
+        </p>
+
+        <h2 className="text-2xl font-bold text-white mb-4">Réclamations et Litiges</h2>
+        <p className="text-gray-400 mb-4">
+          Toute réclamation concernant une facture doit être signalée dans un délai de 7 jours suivant sa réception. Passé ce délai, la facture est considérée comme acceptée.
         </p>
 
         <h2 className="text-2xl font-bold text-white mb-4">Politique de Remboursement</h2>
         <p className="text-gray-400 mb-4">
-          Un remboursement peut être demandé sous certaines conditions. Veuillez nous contacter dans un délai de 14 jours suivant votre achat pour toute demande de remboursement.
+          Les remboursements sont accordés uniquement en cas de dysfonctionnement avéré du service ou de facturation incorrecte. Contactez notre support pour toute demande.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Garanties et Responsabilité</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">Renouvellement Automatique</h2>
         <p className="text-gray-400 mb-4">
-          Nos produits et services sont couverts par une garantie limitée. Cependant, nous ne pouvons être tenus responsables de tout dommage indirect résultant de l'utilisation de nos produits.
+          Les services sont renouvelés automatiquement à la fin de chaque période de facturation, sauf annulation préalable dans l'espace client.
+        </p>
+
+        <h2 className="text-2xl font-bold text-white mb-4">Modification des Conditions</h2>
+        <p className="text-gray-400 mb-4">
+          FrozenHost se réserve le droit de modifier ces termes et conditions avec un préavis de 30 jours.
+        </p>
+
+        <h2 className="text-2xl font-bold text-white mb-4">Contact</h2>
+        <p className="text-gray-400 mb-4">
+          Pour toute question concernant les factures, contactez-nous par e-mail à support@frozenhost.com ou via notre site web.
         </p>
       </div>
 
