@@ -72,7 +72,6 @@ export default function Home() {
         <title>FrozenHost - Hébergement Cloud Performant</title>
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="preload" href="/logo.png" as="image" />
-        <link rel="preload" href="/path/to/font.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
