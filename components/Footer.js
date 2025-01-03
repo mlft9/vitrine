@@ -32,8 +32,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-white transition">
-                &#x276F; Wiki
+              <Link href="https://status.frozenhost.cloud/status/all" className="hover:text-white transition">
+                &#x276F; Status
               </Link>
             </li>
           </ul>
