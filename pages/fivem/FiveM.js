@@ -11,7 +11,7 @@ const productOptions = [
     name: 'FiveM - Essai 48h',
     price: 'Gratuit',
     description: 'Découvrez nos services gratuitement pendant 48 heures, idéal pour une première prise en main et pour tester la stabilité de nos hébergements.',
-    link: 'https://client.frozenhost.fr/store/basket/config/41',
+    link: 'https://client.frozenhost.fr/store/basket/config/62',
     features: [
       { icon: <FaMicrochip />, text: '2 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
@@ -25,7 +25,7 @@ const productOptions = [
     name: 'FiveM - Développement',
     price: '2.99€',
     description: 'Une solution abordable pour développer et configurer votre serveur avec les performances nécessaires à vos tests.',
-    link: 'https://client.frozenhost.fr/store/basket/config/42',
+    link: 'https://client.frozenhost.fr/store/basket/config/63',
     features: [
       { icon: <FaMicrochip />, text: '2 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
@@ -39,7 +39,7 @@ const productOptions = [
     name: 'FiveM - Power',
     price: '6.99€',
     description: 'Idéal pour les serveurs ayant besoin de ressources supplémentaires pour gérer un trafic moyen et des scripts complexes.',
-    link: 'https://client.frozenhost.fr/store/basket/config/43',
+    link: 'https://client.frozenhost.fr/store/basket/config/64',
     features: [
       { icon: <FaMicrochip />, text: '4 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
@@ -53,7 +53,7 @@ const productOptions = [
     name: 'FiveM - Élite',
     price: '14.99€',
     description: 'Conçu pour les serveurs exigeants avec un grand nombre de joueurs et des configurations poussées.',
-    link: 'https://client.frozenhost.fr/store/basket/config/44',
+    link: 'https://client.frozenhost.fr/store/basket/config/65',
     features: [
       { icon: <FaMicrochip />, text: '6 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
@@ -67,7 +67,7 @@ const productOptions = [
     name: 'FiveM - Titan',
     price: '24.99€',
     description: 'Une puissance inégalée pour des serveurs ayant un trafic élevé et des besoins en ressources maximales.',
-    link: 'https://client.frozenhost.fr/store/basket/config/45',
+    link: 'https://client.frozenhost.fr/store/basket/config/66',
     features: [
       { icon: <FaMicrochip />, text: '8 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
