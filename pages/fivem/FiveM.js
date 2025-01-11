@@ -15,7 +15,7 @@ const productOptions = [
     features: [
       { icon: <FaMicrochip />, text: '2 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
-      { icon: <FaMemory />, text: '4 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '4 Go RAM' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '60 Go SSD' },
     ],
@@ -29,7 +29,7 @@ const productOptions = [
     features: [
       { icon: <FaMicrochip />, text: '2 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
-      { icon: <FaMemory />, text: '4 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '4 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '60 Go SSD' },
     ],
@@ -43,7 +43,7 @@ const productOptions = [
     features: [
       { icon: <FaMicrochip />, text: '4 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
-      { icon: <FaMemory />, text: '8 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '8 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '100 Go SSD' },
     ],
@@ -57,7 +57,7 @@ const productOptions = [
     features: [
       { icon: <FaMicrochip />, text: '6 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
-      { icon: <FaMemory />, text: '12 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '12 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '150 Go SSD' },
     ],
@@ -71,7 +71,7 @@ const productOptions = [
     features: [
       { icon: <FaMicrochip />, text: '8 coeurs' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
-      { icon: <FaMemory />, text: '16 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '16 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '200 Go SSD' },
     ],
@@ -85,7 +85,7 @@ const productOptions = [
     features: [
       { icon: <FaMicrochip />, text: 'Au choix' },
       { icon: <FaMapMarkerAlt />, text: 'Hébergé en France / Allemagne' },
-      { icon: <FaMemory />, text: '? Go RAM DDR4' },
+      { icon: <FaMemory />, text: '? Go RAM ' },
       { icon: <FaCloud />, text: '10 Gb/s' },
       { icon: <FaHdd />, text: '? Go SSD' },
     ],

@@ -14,7 +14,7 @@ const vpsOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/56',
     features: [
       { icon: <FaMicrochip />, text: '2 vCPU' },
-      { icon: <FaDatabase />, text: '4 Go RAM DDR4 ECC' },
+      { icon: <FaDatabase />, text: '4 Go RAM ' },
       { icon: <FaCloud />, text: '40 Go SSD' },
       { icon: <FaNetworkWired />, text: '1 Gbps Réseau' },
       { icon: <FaMapMarkerAlt />, text: 'Localisé en France' },
@@ -28,7 +28,7 @@ const vpsOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/57',
     features: [
       { icon: <FaMicrochip />, text: '4 vCPU' },
-      { icon: <FaDatabase />, text: '8 Go RAM DDR4 ECC' },
+      { icon: <FaDatabase />, text: '8 Go RAM ' },
       { icon: <FaCloud />, text: '80 Go SSD' },
       { icon: <FaNetworkWired />, text: '1 Gbps Réseau' },
       { icon: <FaMapMarkerAlt />, text: 'Localisé en France' },
@@ -42,7 +42,7 @@ const vpsOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/58',
     features: [
       { icon: <FaMicrochip />, text: '6 vCPU' },
-      { icon: <FaDatabase />, text: '12 Go RAM DDR4 ECC' },
+      { icon: <FaDatabase />, text: '12 Go RAM ' },
       { icon: <FaCloud />, text: '120 Go SSD' },
       { icon: <FaNetworkWired />, text: '2 Gbps Réseau' },
       { icon: <FaMapMarkerAlt />, text: 'Localisé en France' },
@@ -56,7 +56,7 @@ const vpsOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/59',
     features: [
       { icon: <FaMicrochip />, text: '8 vCPU' },
-      { icon: <FaDatabase />, text: '16 Go RAM DDR4 ECC' },
+      { icon: <FaDatabase />, text: '16 Go RAM ' },
       { icon: <FaCloud />, text: '180 Go SSD' },
       { icon: <FaNetworkWired />, text: '10 Gbps Réseau' },
       { icon: <FaMapMarkerAlt />, text: 'Localisé en France' },
@@ -70,7 +70,7 @@ const vpsOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/60',
     features: [
       { icon: <FaMicrochip />, text: '12 vCPU' },
-      { icon: <FaDatabase />, text: '32 Go RAM DDR4 ECC' },
+      { icon: <FaDatabase />, text: '32 Go RAM ' },
       { icon: <FaCloud />, text: '240 Go SSD' },
       { icon: <FaNetworkWired />, text: '10 Gbps Réseau' },
       { icon: <FaMapMarkerAlt />, text: 'Localisé en France' },

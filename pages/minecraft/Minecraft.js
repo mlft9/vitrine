@@ -14,7 +14,7 @@ const productOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/67',
     features: [
       { icon: <FaMicrochip />, text: '2 cœurs' },
-      { icon: <FaMemory />, text: '4 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '4 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '20 Go SSD' },
     ],
@@ -27,7 +27,7 @@ const productOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/68',
     features: [
       { icon: <FaMicrochip />, text: '2 cœurs' },
-      { icon: <FaMemory />, text: '6 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '6 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '40 Go SSD' },
     ],
@@ -40,7 +40,7 @@ const productOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/69',
     features: [
       { icon: <FaMicrochip />, text: '4 cœurs' },
-      { icon: <FaMemory />, text: '8 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '8 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '60 Go SSD' },
     ],
@@ -53,7 +53,7 @@ const productOptions = [
     link: 'https://client.frozenhost.fr/store/basket/config/70',
     features: [
       { icon: <FaMicrochip />, text: '6 cœurs' },
-      { icon: <FaMemory />, text: '12 Go RAM DDR4' },
+      { icon: <FaMemory />, text: '12 Go RAM ' },
       { icon: <FaCloud />, text: '1 Gb/s' },
       { icon: <FaHdd />, text: '100 Go SSD' },
     ],
