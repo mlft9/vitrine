@@ -1,0 +1,11 @@
+# Utiliser une image de base Caddy
+FROM caddy:2
+
+# Copier le fichier de configuration Caddy
+COPY Caddyfile /etc/caddy/Caddyfile
+
+# Exposer le port sur lequel Caddy va tourner
+EXPOSE 4589
+
+# Commande pour démarrer Caddy
+CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
