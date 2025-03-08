@@ -95,7 +95,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "FrozenHost - Hébergement Cloud Performant",
-            "description": "Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante.",
+            "description": "Découvrez une infrastructure cloud fiable, sécurisée et innovante.",
             "url": "https://frozenhost.fr/",
             "publisher": {
               "@type": "Organization",

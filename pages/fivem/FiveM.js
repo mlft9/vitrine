@@ -95,7 +95,7 @@ const productOptions = [
 const includedFeatures = [
   { icon: <FaShieldAlt />, title: 'ANTI-DDOS', description: 'Mitigation automatique' },
   { icon: <FaMicrochip />, title: 'PROCESSEURS', description: 'AMD Ryzen 9 3900x 4.2 Ghz' },
-  { icon: <FaDesktop />, title: 'PANEL', description: 'Comme si vous étiez sur votre machine' },
+  { icon: <FaDesktop />, title: 'PANEL DE GESTION', description: 'Vous contrôlez à 100% votre machine.' },
   { icon: <FaFolder />, title: 'WEB-FTP', description: 'Explorez et éditez sans logiciel' },
   { icon: <FaHeadset />, title: 'SUPPORT 24/7', description: 'Un support à votre écoute' },
 ];

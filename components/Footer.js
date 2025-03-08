@@ -118,7 +118,7 @@ export default function Footer() {
             href="https://www.twitch.tv/jenestreampasbeaucoup"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-cyan-800 hover:text-white"
+            className="text-cyan-400 hover:text-white"
           >
             Matheo
           </a>
