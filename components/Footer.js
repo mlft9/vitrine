@@ -109,7 +109,7 @@ export default function Footer() {
       {/* Bas du footer */}
       <div className="mt-8 border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm text-cyan-400">
         <p>
-          <span className="text-white">&copy; 2024 aCollective.</span> Tous
+          <span className="text-white">&copy; 2025 aCollective.</span> Tous
           droits réservés.
         </p>
         <p className="mt-4 md:mt-0">
