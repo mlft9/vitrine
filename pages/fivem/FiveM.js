@@ -94,7 +94,7 @@ const productOptions = [
 
 const includedFeatures = [
   { icon: <FaShieldAlt />, title: 'ANTI-DDOS', description: 'Mitigation automatique' },
-  { icon: <FaMicrochip />, title: 'INTEL XEON', description: 'Intel(R) Xeon(R) CPU E5-1650 v4 - E5-2680 v2' },
+  { icon: <FaMicrochip />, title: 'PROCESSEURS', description: 'AMD Ryzen 9 3900x 4.2 Ghz' },
   { icon: <FaDesktop />, title: 'PANEL', description: 'Comme si vous étiez sur votre machine' },
   { icon: <FaFolder />, title: 'WEB-FTP', description: 'Explorez et éditez sans logiciel' },
   { icon: <FaHeadset />, title: 'SUPPORT 24/7', description: 'Un support à votre écoute' },
@@ -187,7 +187,7 @@ export default function FiveM() {
         <div className="bg-cyan-700 text-white py-12 mt-16">
           <h2 className="text-center text-3xl font-bold mb-6 text-white">Inclus avec votre serveur GTA V RP</h2>
           <p className="text-cyan-300 text-center mb-8">
-            Hébergé sur des serveurs de dernière génération pour une expérience optimale. Nous utilisons des processeurs Intel Xeon, ainsi que des disques SSD ou NVMe à haute performance.
+            Hébergé sur des serveurs de dernière génération pour une expérience optimale. Nous utilisons des processeurs de la Ryzen du contructeur AMD, ainsi que des disques SSD ou NVMe à haute performance.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 md:px-16">
             {includedFeatures.map((feature, index) => (
