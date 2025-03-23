@@ -11,7 +11,7 @@ const vpsOptions = [
     name: 'VPS Starter',
     price: '5.99€',
     description: 'Pour démarrer votre projet avec un VPS Cloud fiable et performant.',
-    link: 'https://client.frozenhost.fr/store/basket/config/51',
+    link: 'https://client.frozenhost.fr/store/basket/config/1',
     features: [
       { icon: <FaMicrochip />, text: '2 vCPU' },
       { icon: <FaDatabase />, text: '4 Go RAM ' },
@@ -25,7 +25,7 @@ const vpsOptions = [
     name: 'VPS Boost',
     price: '9.99€',
     description: 'Une solution équilibrée pour vos besoins croissants.',
-    link: 'https://client.frozenhost.fr/store/basket/config/52',
+    link: 'https://client.frozenhost.fr/store/basket/config/2',
     features: [
       { icon: <FaMicrochip />, text: '4 vCPU' },
       { icon: <FaDatabase />, text: '8 Go RAM ' },
@@ -39,7 +39,7 @@ const vpsOptions = [
     name: 'VPS Pro',
     price: '14.99€',
     description: 'Idéal pour des applications intensives et un trafic élevé.',
-    link: 'https://client.frozenhost.fr/store/basket/config/53',
+    link: 'https://client.frozenhost.fr/store/basket/config/3',
     features: [
       { icon: <FaMicrochip />, text: '6 vCPU' },
       { icon: <FaDatabase />, text: '12 Go RAM ' },
@@ -53,7 +53,7 @@ const vpsOptions = [
     name: 'VPS Élite',
     price: '24.99€',
     description: 'Une infrastructure pour vos besoins d’entreprise les plus exigeants.',
-    link: 'https://client.frozenhost.fr/store/basket/config/54',
+    link: 'https://client.frozenhost.fr/store/basket/config/4',
     features: [
       { icon: <FaMicrochip />, text: '8 vCPU' },
       { icon: <FaDatabase />, text: '16 Go RAM ' },
@@ -67,7 +67,7 @@ const vpsOptions = [
     name: 'VPS Ultra',
     price: '29.99€',
     description: 'Une infrastructure pour vos besoins d’entreprise les plus exigeants.',
-    link: 'https://client.frozenhost.fr/store/basket/config/55',
+    link: 'https://client.frozenhost.fr/store/basket/config/5',
     features: [
       { icon: <FaMicrochip />, text: '12 vCPU' },
       { icon: <FaDatabase />, text: '32 Go RAM ' },

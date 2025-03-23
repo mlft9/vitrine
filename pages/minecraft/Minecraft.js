@@ -11,7 +11,7 @@ const productOptions = [
     name: 'Minecraft - Essai 48h',
     price: 'Gratuit',
     description: 'Profitez d’un accès gratuit pendant 48 heures pour découvrir la qualité de nos services et tester votre serveur Minecraft.',
-    link: 'https://client.frozenhost.fr/store/basket/config/67',
+    link: 'https://discord.gg/b4dgg75MmG',
     features: [
       { icon: <FaMicrochip />, text: '2 cœurs' },
       { icon: <FaMemory />, text: '4 Go RAM ' },
@@ -24,7 +24,7 @@ const productOptions = [
     name: 'Minecraft - Développement',
     price: '4.99€',
     description: 'Parfait pour développer des serveurs Minecraft personnalisés avec les ressources nécessaires pour débuter.',
-    link: 'https://client.frozenhost.fr/store/basket/config/68',
+    link: 'https://client.frozenhost.fr/store/basket/config/17',
     features: [
       { icon: <FaMicrochip />, text: '2 cœurs' },
       { icon: <FaMemory />, text: '6 Go RAM ' },
@@ -37,7 +37,7 @@ const productOptions = [
     name: 'Minecraft - Power',
     price: '9.99€',
     description: 'Une offre idéale pour héberger des serveurs Minecraft performants et accueillir plusieurs joueurs sans compromis sur la fluidité.',
-    link: 'https://client.frozenhost.fr/store/basket/config/69',
+    link: 'https://client.frozenhost.fr/store/basket/config/18',
     features: [
       { icon: <FaMicrochip />, text: '4 cœurs' },
       { icon: <FaMemory />, text: '8 Go RAM ' },
@@ -50,7 +50,7 @@ const productOptions = [
     name: 'Minecraft - Élite',
     price: '19.99€',
     description: 'Conçu pour des serveurs très actifs, cette offre assure une stabilité optimale et des performances premium.',
-    link: 'https://client.frozenhost.fr/store/basket/config/70',
+    link: 'https://client.frozenhost.fr/store/basket/config/19',
     features: [
       { icon: <FaMicrochip />, text: '6 cœurs' },
       { icon: <FaMemory />, text: '12 Go RAM ' },
