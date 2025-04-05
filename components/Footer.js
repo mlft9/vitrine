@@ -32,7 +32,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://status.frozenhost.cloud/status/all" className="hover:text-white transition">
+              <Link href="https://status.frozenhost.fr" className="hover:text-white transition">
                 &#x276F; Status
               </Link>
             </li>
